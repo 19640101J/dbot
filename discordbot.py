@@ -5,7 +5,7 @@ from datetime import date
 import random
 
 client = discord.Client()
-alt_names = {
+altnames = {
     'shion':    ['紫咲シオン', 'シオン', 'クソガキ'],
     'haato':    ['赤井はあと', 'はあちゃま', 'はあと'],
     'aqua':     ['湊あくあ', 'あくたん', 'あくあ'],
@@ -117,7 +117,7 @@ All = f'''
 def CalcAge(query: str) -> str:
     def QueryToKey(query:str) -> str:
         # k: 'miko', v: [nicknames]
-        for k, v in alt_names.items():
+        for k, v in altnames.items():
             if query in v:
                 return (k, v[0], query)    
         return (query, query, query)
