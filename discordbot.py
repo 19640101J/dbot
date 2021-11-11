@@ -1,10 +1,10 @@
 from discord.ext import commands
-from os import getenv
+import os
 import traceback
-
 import random
 
 client = discord.Client()
+
 alt_names = {
     "shion":    ['紫咲シオン', 'シオン', 'クソガキ'],
     "haato":    ['赤井はあと', 'はあちゃま', 'はあと'],
