@@ -195,5 +195,5 @@ async def on_message(message):
         msg = random.choice(chat_buffer)
         await message.channel.send(msg)
 
-token = getenv('DISCORD_BOT_TOKEN')
+token = ''
 client.run(token)
