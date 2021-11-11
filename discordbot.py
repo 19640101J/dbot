@@ -1,5 +1,6 @@
-import discord
-import os
+from discord.ext import commands
+from os import getenv
+import traceback
 from datetime import date
 import random
 
